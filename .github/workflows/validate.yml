@@ -11,4 +11,4 @@ jobs:
   validate:
     uses: skill-publisher/dev-skills/.github/workflows/validate-skill.yml@main
     with:
-      skill_name: sgc-app-generator
+      skill_name: lov-app-generator

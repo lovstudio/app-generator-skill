@@ -1,4 +1,4 @@
-# sgc-app-generator
+# lov-app-generator
 
 ![Version](https://img.shields.io/badge/version-0.3.0-CC785C)
 
@@ -25,7 +25,7 @@ Or through Claude Code plugin marketplace:
 
 ```text
 /plugin marketplace add skill-publisher/dev-skills
-/plugin install dev-tools@sgc-dev
+/plugin install dev-tools@lov-dev
 ```
 
 Requires: Python 3.8+ for the audit helper. No Python packages are required.
@@ -40,7 +40,7 @@ Requires: Python 3.8+ for the audit helper. No Python packages are required.
 生成一个只创建 web 的 Skill Publisher App，按需求判断用 Vite 还是 Next.js，包含 Configurable Academic、shadcn 和 lovinsp
 
 # Or audit an existing app:
-python3 "${SKILL_APP_GENERATOR_SKILL_DIR:-$HOME/.claude/skills/sgc-app-generator}/scripts/audit_app_project.py" --root . --app-type auto --format markdown
+python3 "${SKILL_APP_GENERATOR_SKILL_DIR:-$HOME/.claude/skills/lov-app-generator}/scripts/audit_app_project.py" --root . --app-type auto --format markdown
 ```
 
 ## What It Does
@@ -71,7 +71,7 @@ Prefer environment variables when local paths differ:
 
 | Variable | Usage |
 |---|---|
-| `SKILL_APP_GENERATOR_SKILL_DIR` | Installed `sgc-app-generator` skill directory |
+| `SKILL_APP_GENERATOR_SKILL_DIR` | Installed `lov-app-generator` skill directory |
 | `SKILL_DESIGN_GUIDE` | Configurable Academic design guide path |
 | `SKILL_PROFILE_PATH` | Skill Publisher brand asset root or profile |
 
@@ -87,9 +87,9 @@ See `references/user-config.md` for the complete resolution order.
 ## Audit Helper
 
 ```bash
-python3 "${SKILL_APP_GENERATOR_SKILL_DIR:-$HOME/.claude/skills/sgc-app-generator}/scripts/audit_app_project.py" --root /path/to/app --app-type auto
-python3 "${SKILL_APP_GENERATOR_SKILL_DIR:-$HOME/.claude/skills/sgc-app-generator}/scripts/audit_app_project.py" --root /path/to/app --app-type web --format json
-python3 "${SKILL_APP_GENERATOR_SKILL_DIR:-$HOME/.claude/skills/sgc-app-generator}/scripts/audit_app_project.py" --root /path/to/app --app-type tauri --format markdown
+python3 "${SKILL_APP_GENERATOR_SKILL_DIR:-$HOME/.claude/skills/lov-app-generator}/scripts/audit_app_project.py" --root /path/to/app --app-type auto
+python3 "${SKILL_APP_GENERATOR_SKILL_DIR:-$HOME/.claude/skills/lov-app-generator}/scripts/audit_app_project.py" --root /path/to/app --app-type web --format json
+python3 "${SKILL_APP_GENERATOR_SKILL_DIR:-$HOME/.claude/skills/lov-app-generator}/scripts/audit_app_project.py" --root /path/to/app --app-type tauri --format markdown
 ```
 
 ## License
