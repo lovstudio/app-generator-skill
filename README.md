@@ -1,6 +1,6 @@
 # 应用工坊 · App Studio
 
-![Version](https://img.shields.io/badge/version-0.5.6-CC785C)
+![Version](https://img.shields.io/badge/version-0.5.7-CC785C)
 
 Generate or standardize Lovstudio.AI apps, choosing web-only, PWA, Tauri,
 or native macOS case-by-case. It supports Finder Quick Actions as signed Action
@@ -14,7 +14,7 @@ Independent source repository, also distributed through [lovstudio/skills](https
 ## Install
 
 ```bash
-npx skills add lov-app-generator -g -y
+npx lovstudio skills add app-generator -g -y
 ```
 
 Or through Claude Code plugin marketplace:
